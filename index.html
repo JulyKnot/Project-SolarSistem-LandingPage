@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="estilo.css">
+	<title>Solar Sistem Proyect</title>
+</head>
+<body>
+	<section>
+		<div class="circulo"></div>
+		<header>
+			<a href="#" ><img src="img/logo.png" class="logo" ></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Merch</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</header>
+		<div class="contenido">
+			<div class="textCaja">
+				<h2>Welcome to <br>The <span>Solar Sistem Project</span></h2>
+				<p>About 4.6 billion years ago, a giant cloud of dust and gas known as the solar nebula collapsed in on itself <br> and began to form what would eventually become our solar system's sun and planets.</p>
+				<a href="#">Join us in this journey</a>
+			</div>
+		<div data-aos="fade-right"
+    		 data-aos-offset="300"
+    		 data-aos-easing="ease-in-sine">
+		<div class="imgCaja">
+			<img src="img/tierra.png" class="tierra">
+		</div>
+		</div>
+	</div>
+	<ul class="thumb">
+		<li><img src="img/tierra.png" onclick="imgSlider('img/tierra.png');changeCircleColor('#3777FF')"></li>
+		<li><img src="img/mercurio.png" onclick="imgSlider('img/mercurio.png');changeCircleColor('#CC998D')"></li>
+		<li><img src="img/venus.png" onclick="imgSlider('img/venus.png');changeCircleColor('#70A9A1')"></li>
+		<li><img src="img/marte.png" onclick="imgSlider('img/marte.png');changeCircleColor('#FA9500')"></li>
+		<li><img src="img/jupiter.png" onclick="imgSlider('img/jupiter.png');changeCircleColor('#FFE9CE')"></li>
+		<li><img src="img/urano.png" onclick="imgSlider('img/urano.png');changeCircleColor('#429EA6')"></li>
+		<li><img src="img/saturno.png" style="max-width: 135px;" onclick="imgSlider('img/saturno.png');changeCircleColor('#FFBE86')">
+		</li>
+	</ul>
+	</section>
+</body>
+<script type="text/javascript">
+function imgSlider(anything){
+document.querySelector(".tierra").src = anything;}
+
+function changeCircleColor(color){
+const circulo = document.querySelector(".circulo");
+circulo.style.background = color;}
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</html>
